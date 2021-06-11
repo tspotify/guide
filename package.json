@@ -1,0 +1,29 @@
+{
+  "name": "tspotify-guide",
+  "version": "0.0.1-dev",
+  "description": "The official guide for TSpotify library",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "keywords": [
+    "spotify",
+    "guide",
+    "tutorial",
+    "api",
+    "tspotify",
+    "nodejs"
+  ],
+  "author": "Shubham Parihar <shubhamparihar391@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "eslint": "^7.28.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.1",
+    "typescript": "^4.3.2",
+    "vuepress-vite": "^2.0.0-beta.17"
+  }
+}
