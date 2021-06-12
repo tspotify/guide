@@ -4,11 +4,42 @@ import type { DefaultThemeOptions, ViteBundlerOptions } from 'vuepress-vite'
 
 export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   bundler: '@vuepress/vite',
-  lang: 'en-US',
+  lang: 'en-IN',
   title: 'TSpotify Guide',
   description: description,
 
   bundlerConfig: {
     // vite bundler options
   },
+
+  themeConfig: {
+    navbar: [
+      {
+        text: 'Home',
+        link: '/'
+      },
+      {
+        text: 'Guide',
+        link: '/guide/'
+      },
+      {
+        text: 'Documentation',
+        link: 'https://tspotify.github.io/tspotify'
+      }
+    ],
+    repo: 'https://github.com/tspotify/guide',
+    contributors: false,
+    sidebar: {
+      '/guide/': [
+        {
+          text: 'Guide',
+          link: '/guide/',
+          children: [
+            '/guide/README.md',
+            '/guide/getting-started.md'
+          ]
+        }
+      ]
+    }
+  }
 })
