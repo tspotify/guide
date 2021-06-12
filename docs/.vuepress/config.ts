@@ -13,6 +13,10 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   },
 
   themeConfig: {
+    docsRepo: 'https://github.com/tspotify/guide',
+    docsBranch: 'main',
+    docsDir: 'docs',
+    editLinkPattern: ':repo/edit/:branch/:path',
     navbar: [
       {
         text: 'Home',
