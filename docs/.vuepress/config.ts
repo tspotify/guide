@@ -13,6 +13,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:image', content: '/images/hero.png' }],
     ['meta', { property: 'og:locale', content: 'en_IN' }],
+    ['meta', { name: 'theme-color', content: '#1DB954' }],
   ],
 
   bundlerConfig: {
