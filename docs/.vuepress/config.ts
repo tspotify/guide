@@ -36,8 +36,8 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     sidebar: {
       '/guide/': [
         {
+          isGroup: true,
           text: 'Guide',
-          link: '/guide/',
           children: [
             '/guide/README.md',
             '/guide/getting-started.md'
