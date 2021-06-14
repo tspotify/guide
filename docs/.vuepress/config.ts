@@ -7,6 +7,13 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
   lang: 'en-IN',
   title: 'TSpotify Guide',
   description: description,
+  head: [
+    ['meta', { property: 'og:title', content: 'TSpotify Guide' }],
+    ['meta', { property: 'og:description', content: description }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:image', content: '/images/hero.png' }],
+    ['meta', { property: 'og:locale', content: 'en_IN' }],
+  ],
 
   bundlerConfig: {
     // vite bundler options
@@ -44,6 +51,6 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
           ]
         }
       ]
-    }
+    },
   }
 })
