@@ -28,18 +28,25 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     navbar: [
       {
         text: 'Home',
-        link: '/'
+        link: '/',
       },
       {
         text: 'Guide',
-        link: '/guide/'
+        link: '/guide/',
       },
       {
         text: 'Documentation',
-        link: 'https://tspotify.github.io/tspotify'
+        link: 'https://tspotify.github.io/tspotify',
+      },
+      {
+        text: 'GitHub',
+        link: 'https://github.com/tspotify/guide',
+      },
+      {
+        text: 'Discord',
+        link: 'https://discord.com/invite/87gFS5ZeC3',
       }
     ],
-    repo: 'https://github.com/tspotify/guide',
     contributors: false,
     sidebar: {
       '/guide/': [
@@ -48,7 +55,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
           text: 'Guide',
           children: [
             '/guide/README.md',
-            '/guide/getting-started.md'
+            '/guide/getting-started.md',
           ]
         }
       ]
