@@ -47,6 +47,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
         link: 'https://discord.com/invite/87gFS5ZeC3',
       }
     ],
+    logo: '/images/logo.png',
     contributors: false,
     sidebar: {
       '/guide/': [
